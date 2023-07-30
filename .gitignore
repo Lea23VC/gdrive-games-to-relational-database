@@ -1,0 +1,41 @@
+# Python-specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+*.pyw
+*.pyc/
+*.pyo/
+*.dist-info/
+dist/
+build/
+*.egg-info/
+
+# Virtual environments (Optional but recommended)
+venv/
+env/
+.pip/
+pip-wheel-metadata/
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+*.swo
+
+# Logs and data files
+*.log
+*.dat
+*.sqlite3
+*.db
+
+# Environment variable files
+.env
+
+# Other temporary and development files
+*.bak
+*.tmp
+*.tmp.*
+*~
