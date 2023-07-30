@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, Date, ForeignKey
-from sqlalchemy.orm import relationship
-from config import Base
+from sqlalchemy.orm import relationship, Mapped
+from config.sqlachemy import Base
 
 class Game(Base):
     __tablename__ = 'games'
@@ -13,4 +13,4 @@ class Game(Base):
 
     # Foreign key relationship with Console model (many-to-one relationship)
     console_id = Column(Integer, ForeignKey('consoles.id'), nullable=False)
-    console = relationship('Console', back_populates='games')
+    console: Mapped["Console"] = relationship(back_populates="games")
