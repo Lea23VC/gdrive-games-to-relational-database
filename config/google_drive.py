@@ -14,7 +14,6 @@ def get_drive_service():
         SCOPES = ['https://www.googleapis.com/auth/drive']
         SERVICE_ACCOUNT_FILE = json.loads(google_auth_data)  # Replace with the path to your Service Account key JSON file
 
-        print(SERVICE_ACCOUNT_FILE)
         credentials = service_account.Credentials.from_service_account_info(
             SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 
